@@ -33,7 +33,7 @@ func (cfg *CachetMonitor) Validate() bool {
 	}
 
 	if len(cfg.API.Token) == 0 || len(cfg.API.URL) == 0 {
-		logrus.Warnf("API URL or API Token missing.\nGet help at https://github.com/castawaylabs/cachet-monitor")
+		logrus.Warnf("API URL or API Token missing.\nGet help at https://github.com/apernouille/cachet-monitor")
 		valid = false
 	}
 

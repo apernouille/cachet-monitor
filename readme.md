@@ -12,7 +12,7 @@
 
 ## Example Configuration
 
-**Note:** configuration can be in json or yaml format. [`example.config.json`](https://github.com/CastawayLabs/cachet-monitor/blob/master/example.config.json), [`example.config.yaml`](https://github.com/CastawayLabs/cachet-monitor/blob/master/example.config.yml) files.
+**Note:** configuration can be in json or yaml format. [`example.config.json`](https://github.com/apernouille/cachet-monitor/blob/master/example.config.json), [`example.config.yaml`](https://github.com/apernouille/cachet-monitor/blob/master/example.config.yml) files.
 
 ```yaml
 api:
@@ -85,7 +85,7 @@ monitors:
 
 ## Installation
 
-1. Download binary from [release page](https://github.com/CastawayLabs/cachet-monitor/releases)
+1. Download binary from [release page](https://github.com/apernouille/cachet-monitor/releases)
 2. Add the binary to an executable path (/usr/bin, etc.)
 3. Create a configuration following provided examples
 4. `cachet-monitor -c /etc/cachet-monitor.yaml`
@@ -120,7 +120,7 @@ Environment varaibles:
 
 ## Init script
 
-If your system is running systemd (like Debian, Ubuntu 16.04, Fedora, RHEL7, or Archlinux) you can use the provided example file: [example.cachet-monitor.service](https://github.com/CastawayLabs/cachet-monitor/blob/master/example.cachet-monitor.service).
+If your system is running systemd (like Debian, Ubuntu 16.04, Fedora, RHEL7, or Archlinux) you can use the provided example file: [example.cachet-monitor.service](https://github.com/apernouille/cachet-monitor/blob/master/example.cachet-monitor.service).
 
 1. Simply put it in the right place with `cp example.cachet-monitor.service /etc/systemd/system/cachet-monitor.service`
 2. Then do a `systemctl daemon-reload` in your terminal to update Systemd configuration
@@ -128,7 +128,7 @@ If your system is running systemd (like Debian, Ubuntu 16.04, Fedora, RHEL7, or 
 
 ## Templates
 
-This package makes use of [`text/template`](https://godoc.org/text/template). [Default HTTP template](https://github.com/CastawayLabs/cachet-monitor/blob/master/http.go#L14)
+This package makes use of [`text/template`](https://godoc.org/text/template). [Default HTTP template](https://github.com/apernouille/cachet-monitor/blob/master/http.go#L14)
 
 The following variables are available:
 
@@ -161,7 +161,7 @@ This gives us power to have an army of geographically distributed loggers and re
 
 When using `cachet-monitor` as a package in another program, you should follow what `cli/main.go` does. It is important to call `Validate` on `CachetMonitor` and all the monitors inside.
 
-[API Documentation](https://godoc.org/github.com/CastawayLabs/cachet-monitor)
+[API Documentation](https://godoc.org/github.com/apernouille/cachet-monitor)
 
 # Contributions welcome
 
