@@ -45,8 +45,7 @@ func (incident *Incident) Send(cfg *CachetMonitor) error {
 	requestType := "POST"
 	requestURL := "/incidents"
 	if incident.ID > 0 {
-		requestType = "PUT"
-		requestURL += "/" + strconv.Itoa(incident.ID)
+		requestURL += "/" + strconv.Itoa(incident.ID) + "/updates"
 	}
 
 	jsonBytes, _ := json.Marshal(incident)
